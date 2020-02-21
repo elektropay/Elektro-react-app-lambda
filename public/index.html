@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="google-analytics" content="UA-20603888-1" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="Payments Remastered | Elektropay" />
+<meta property="og:url" content="https://wwww.elektropay.com" />
+<meta property="og:site_name" content="Elektropay" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/assets/img/og-image.gif" />
+<meta property="og:image:url" content="/assets/img/og-image.gif" />
+<meta property="og:image:secure_url" content="/assets/img/og-image.gif" />
+<meta property="og:image:type" content="image/gif" />
+<meta property="og:image:width" content="1500" />
+<meta property="og:image:height" content="1500" />
+<meta property="og:description" content="Elektropay Provides Everything in a Single Platform." />
+    <meta property="fb:admins" content="100001307761910,2535641,1591053024" />
+    <meta property="fb:app_id" content="" />
     <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -19,13 +37,74 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Heebo:200,300,600"
+    type="text/css"
+    />
+	<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin"
+    type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+      />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/vendor/animate.css/animate.min.css"
+    />
+
+	<link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/vendor/hs-megamenu/src/hs.megamenu.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="%PUBLIC_URL%/assets/vendor/hs-bg-video/hs-bg-video.css"
+    />
+
+	<link
+    rel="stylesheet"
+    href="%PUBLIC_URL%/assets/vendor/fancybox/jquery.fancybox.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="%PUBLIC_URL%/assets/vendor/slick-carousel/slick/slick.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="%PUBLIC_URL%/assets/vendor/dzsparallaxer/dzsparallaxer.css"
+    />
+
+    <title>Everpay</title>
+<script type="text/javascript">
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+analytics.load("Vmewrvy0RvU9VjPyu3pbSpEm1PkEKYOK");
+analytics.page('Signup');
+analytics.track('Account Created')
+}}();
+</script>
+
   </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
+  <body class="h-100">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="h-100"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +115,117 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="%PUBLIC_URL%/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="https://kit.fontawesome.com/d27ab8cc02.js" crossorigin="anonymous"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/typed.js/lib/typed.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/slick-carousel/slick/slick.js"></script>
+
+    <!-- JS Front -->
+    <script src="%PUBLIC_URL%/assets/js/hs.core.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.header.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.unfold.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.focus-state.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.validation.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.fancybox.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.slick-carousel.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.show-animation.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.svg-injector.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script src="//use.typekit.net/wkj3pfp.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+    <script>
+
+      $(window).on('load', function () {
+
+        var url      = window.location.href;
+        var origin   = window.location.origin+"/profile";
+        //alert(url+"   "+origin);
+        /*if(url == origin){
+          window.location.href = origin;
+        }*/
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 767.98,
+          hideTimeOut: 0
+        });
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of HSScrollNav component
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700
+      });
+
+    });
+    $(document).on('ready', function () {
+
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+      // initialization of video on background
+      $.HSCore.components.HSBgVideo.init('.js-bg-video');
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of sticky blocks
+      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate');
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of video player
+      $.HSCore.components.HSVideoPlayer.init('.js-inline-video-player');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+  <script>
+    (function(){
+      var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+    })("woopra");
+
+    woopra.config({
+        domain: 'everpayinc.com'
+    });
+    woopra.track();
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20603888-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-20603888-1');
+  </script>
   </body>
 </html>
