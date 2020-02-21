@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import { Row, Col } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import bgimage from "../assets/img/450x450/img1.jpg";
 import bgimage1 from "../assets/img/1920x1080/img2.jpg";
 import bgimage2 from "../assets/img/1920x1920/img1.jpg";
@@ -27,7 +26,7 @@ class frontPageSection1 extends Component {
           {fpsection1Data.map((col, i) => (
             <Col key={i} md={6} className="mb-4">
               <h6 className="mb-3">
-                  <FontAwesomeIcon icon="link" className="mr-2" />
+              <i className="fas fa-external-link-alt mr-2"></i>
               </h6>
               <p className="mb-2">{col.description}</p>
               <a className="btn btn-sm btn-primary btn-wide transition-3d-hover" href="{col.link}">Learn More <span className="fas fa-angle-right ml-2"></span></a>

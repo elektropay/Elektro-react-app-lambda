@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/logo.png";
 import logoWhite from "../assets/logo-white.png";
 
@@ -83,14 +82,13 @@ const NavBar = () => {
                       className="dropdown-profile"
                       activeClassName="router-link-exact-active"
                     >
-                      <FontAwesomeIcon icon="user" className="mr-3" /> Profile
+                    <i className="far fa-user mr-3"> Profile</i>
                     </DropdownItem>
                     <DropdownItem
                       id="qsLogoutBtn"
                       onClick={() => logoutWithRedirect()}
                     >
-                      <FontAwesomeIcon icon="power-off" className="mr-3" /> Log
-                      out
+                    <i className="fa fa-power-off mr-3" aria-hidden="true">Log out</i>
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
@@ -100,7 +98,7 @@ const NavBar = () => {
                 <NavItem className="u-header__nav-last-item">
                   <Button
                     id="qsLoginBtn"
-                    className="btn-sm btn-outline-primary transition-3d-hover"
+                    className="btn-sm btn-outline-success transition-3d-hover"
                     block
                     onClick={() => loginWithRedirect({})}
                   >
@@ -126,7 +124,7 @@ const NavBar = () => {
                   </span>
                 </NavItem>
                 <NavItem>
-                  <FontAwesomeIcon icon="user" className="mr-3" />
+                <i className="far fa-user mr-3"></i>
                   <RouterNavLink
                     to="/profile"
                     activeClassName="router-link-exact-active"
@@ -135,13 +133,13 @@ const NavBar = () => {
                   </RouterNavLink>
                 </NavItem>
                 <NavItem>
-                  <FontAwesomeIcon icon="power-off" className="mr-3" />
+                <i className="fas fa-power-off"></i>
                   <RouterNavLink
                     to="#"
                     id="qsLogoutBtn"
                     onClick={() => logoutWithRedirect()}
                   >
-                    Log out
+                  <i className="fa fa-power-off mr-3" aria-hidden="true">Log out</i>
                   </RouterNavLink>
                 </NavItem>
               </Nav>
